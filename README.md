@@ -48,17 +48,3 @@ POST /auth/signup
     "email": "utilisateur@example.com",
     "password": "motdepasse"
 }
-
-2. Connexion de l'utilisateur
-
-````json
-POST /auth/login
-{
-    "email": "utilisateur@example.com",
-    "password": "motdepasse"
-}
-
-## Sécurité
-1. Les mots de passe des utilisateurs sont hachés avant d'être stockés dans la base de données.
-2. Les jetons JWT sont générés avec une expiration et ne contiennent pas de données sensibles.
-3. Les routes sensibles sont protégées en vérifiant la validité du jeton JWT.
