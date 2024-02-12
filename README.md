@@ -43,8 +43,6 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 ```json
 POST /auth/signup
 {
-    "nom": "user1"
-    "prenom" : "prenom"
     "email": "utilisateur@example.com",
     "password": "motdepasse"
 }
